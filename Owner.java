@@ -24,4 +24,6 @@ public class Owner{
 	public Plot[] getPlots(){
 		return plots;
 	}
-	}
+
+	
+}
