@@ -2,7 +2,7 @@ public class Block{
 	private String blockName;
 	Plot plots[];
 	private int count=0;
-	Block[] block;
+	
 	
 	public Block(String blockName){
 		this.blockName=blockName;
@@ -19,8 +19,15 @@ public class Block{
 	public void displayplots(){
 			System.out.println("Block Name:"+ blockName);
 			for(int i=0;i<plots.length;i++){
+			if(plots[i]!=null){
 			plots[i].display();
+	}
 		
+	}
+	}
+	public Plot[] getPlots(){
+		return  plots;
+	}
 	}
 	}
 	public Plot[] getPlots(){
